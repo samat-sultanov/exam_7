@@ -15,12 +15,13 @@
 {% block content %}
     <br>
     <h3 class="text-success">{{ poll.question }}</h3>
+    <h6 class="text-success">Всего ответили: {{ answer_count }}</h6>
     <br>
+    <hr style="width:20%">
+    {% for choice in choices %}
+        <p class="text-success">{{ choice.option }}</p>
+        <a class="text-success" href="{% url 'update_choice' choice.pk %}">Изменить</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="text-success" href="{% url 'delete_choice' choice.pk %}">Удалить</a>
         <hr style="width:20%">
-        {% for choice in choices %}
-            <p class="text-success">{{ choice.option }}</p>
-            <a class="text-success" href="{% url 'update_choice' choice.pk %}">Изменить</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="text-success" href="{% url 'delete_choice' choice.pk %}">Удалить</a>
-            <hr style="width:20%">
-        {% endfor %}
+    {% endfor %}
 {% endblock %}

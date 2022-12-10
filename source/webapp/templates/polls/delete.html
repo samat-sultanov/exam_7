@@ -4,8 +4,8 @@
 {% block content %}
     <form action="" method="post">
         {% csrf_token %}
-        <h2>Вы уверены что хотите удалить опрос - {{ poll.question }}?</h2>
-        <button type="submit">Да</button>
+        <h2 class="text-success">Вы уверены что хотите удалить опрос - {{ poll.question }}?</h2>
+        <button class="text-success" type="submit">Да</button>
     </form>
     <a href="{% url "poll_view" poll.pk %}">Нет</a>
 {% endblock %}

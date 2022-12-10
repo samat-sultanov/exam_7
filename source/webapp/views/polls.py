@@ -22,6 +22,7 @@ class PollView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['choices'] = self.object.choices.all()
+        context['answer_count'] = self.object.answers.count()
         return context
 
 

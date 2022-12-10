@@ -6,5 +6,5 @@
     <form action="" method="post">
         {% include 'partial/form.html' with button_text='Изменить' %}
     </form>
-    <a href="{% url 'poll_view' choice.poll.pk %}">Назад</a>
+    <a class="text-success" href="{% url 'poll_view' choice.poll.pk %}">Назад</a>
 {% endblock %}

@@ -9,14 +9,6 @@
 },
 {
     "model": "webapp.poll",
-    "pk": 2,
-    "fields": {
-        "created_at": "2022-12-10T08:14:40.147Z",
-        "question": "В какой местной компании вам хотелось бы поработать?"
-    }
-},
-{
-    "model": "webapp.poll",
     "pk": 3,
     "fields": {
         "created_at": "2022-12-10T08:16:31.100Z",
@@ -29,14 +21,6 @@
     "fields": {
         "created_at": "2022-12-10T08:19:49.826Z",
         "question": "С какой из БД вам приходилось работать?"
-    }
-},
-{
-    "model": "webapp.poll",
-    "pk": 5,
-    "fields": {
-        "created_at": "2022-12-10T08:21:25.850Z",
-        "question": "В какой их компаний FAANG вам хотелось бы поработать?"
     }
 },
 {
@@ -60,7 +44,31 @@
     "pk": 8,
     "fields": {
         "created_at": "2022-12-10T08:29:08.841Z",
-        "question": "Где вы нашли информацию о школе программирования?"
+        "question": "Где вы нашли информацию о курсах программирования?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 9,
+    "fields": {
+        "created_at": "2022-12-10T09:29:47.059Z",
+        "question": "На какой операционной системе вы работаете?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 10,
+    "fields": {
+        "created_at": "2022-12-10T09:32:41.267Z",
+        "question": "Какой университет вы окончили???"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 12,
+    "fields": {
+        "created_at": "2022-12-10T12:50:58.383Z",
+        "question": "Куда вы хотели бы релоцироваться?"
     }
 },
 {
@@ -93,38 +101,6 @@
     "fields": {
         "option": "PHP",
         "poll": 1
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 5,
-    "fields": {
-        "option": "НурТелеком",
-        "poll": 2
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 6,
-    "fields": {
-        "option": "Mega",
-        "poll": 2
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 7,
-    "fields": {
-        "option": "Beeline",
-        "poll": 2
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 8,
-    "fields": {
-        "option": "MadDevs",
-        "poll": 2
     }
 },
 {
@@ -189,38 +165,6 @@
     "fields": {
         "option": "ClickHouse",
         "poll": 4
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 17,
-    "fields": {
-        "option": "Google",
-        "poll": 5
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 18,
-    "fields": {
-        "option": "Facebook",
-        "poll": 5
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 19,
-    "fields": {
-        "option": "Amazon",
-        "poll": 5
-    }
-},
-{
-    "model": "webapp.choice",
-    "pk": 20,
-    "fields": {
-        "option": "Netflix",
-        "poll": 5
     }
 },
 {
@@ -317,6 +261,201 @@
     "fields": {
         "option": "Посоветовали бывшие ученики школы",
         "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 33,
+    "fields": {
+        "option": "КРСУ",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 34,
+    "fields": {
+        "option": "Манас",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 36,
+    "fields": {
+        "option": "Политех",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 37,
+    "fields": {
+        "option": "Windows",
+        "poll": 9
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 38,
+    "fields": {
+        "option": "MacOS",
+        "poll": 9
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 39,
+    "fields": {
+        "option": "Linux",
+        "poll": 9
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 40,
+    "fields": {
+        "option": "КГУСТА",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 46,
+    "fields": {
+        "option": "Ататурк-Алатоо",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 47,
+    "fields": {
+        "option": "США",
+        "poll": 12
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 48,
+    "fields": {
+        "option": "Канада",
+        "poll": 12
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 49,
+    "fields": {
+        "option": "Европа",
+        "poll": 12
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 50,
+    "fields": {
+        "option": "Австралия",
+        "poll": 12
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-12-10T12:12:53.408Z",
+        "poll": 9,
+        "option": 37
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-12-10T12:14:16.739Z",
+        "poll": 10,
+        "option": 36
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-12-10T12:14:21.330Z",
+        "poll": 6,
+        "option": 21
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 8,
+    "fields": {
+        "created_at": "2022-12-10T12:18:56.518Z",
+        "poll": 7,
+        "option": 26
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 9,
+    "fields": {
+        "created_at": "2022-12-10T12:19:38.896Z",
+        "poll": 4,
+        "option": 13
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 10,
+    "fields": {
+        "created_at": "2022-12-10T12:25:12.004Z",
+        "poll": 4,
+        "option": 15
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 11,
+    "fields": {
+        "created_at": "2022-12-10T12:37:11.105Z",
+        "poll": 6,
+        "option": 22
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 12,
+    "fields": {
+        "created_at": "2022-12-10T12:48:24.290Z",
+        "poll": 10,
+        "option": 34
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 13,
+    "fields": {
+        "created_at": "2022-12-10T12:48:34.117Z",
+        "poll": 10,
+        "option": 36
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 14,
+    "fields": {
+        "created_at": "2022-12-10T12:48:45.034Z",
+        "poll": 10,
+        "option": 40
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 15,
+    "fields": {
+        "created_at": "2022-12-10T12:51:28.852Z",
+        "poll": 12,
+        "option": 47
     }
 },
 {
