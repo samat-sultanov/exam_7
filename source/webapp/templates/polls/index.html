@@ -2,21 +2,23 @@
 
 {% block nav %}
     <li class="nav-item">
-        <a class="nav-link" href="{% url "create_poll" %}">Создать опрос</a>
+        <a class="nav-link text-success" href="{% url "create_poll" %}">Создать опрос</a>
     </li>
 {% endblock %}
 
 {% block content %}
     <br>
-    <h1>Список Опросников</h1>
+    <h1 class="text-success">Список Опросников</h1>&nbsp;
     <div class="row">
         {% for poll in polls %}
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
+            <div class="col-8 col-lg-8" style="margin-bottom: 10px;">
+                <div class="card" style="border: 1px solid green;">
                     <div class="card-body">
                         <h7 class="card-title">{{ poll.question }}</h7>
-                        <a href="{{ poll.get_absolute_url }}" class="card-link">Подробнее</a>&nbsp;&nbsp;&nbsp;&nbsp;
-{#                        <a href="{% url 'answer_view' %}" class="card-link">Пройти опрос</a>#}
+                        <a class="card-link text-right position-absolute top-0 end-0" href="{{ poll.get_absolute_url }}"
+                           style="padding: 10px;"><i
+                                class="bi bi-ticket-detailed link-success"></i></a>
+                        {#                        <a href="{% url 'answer_view' %}" class="card-link">Пройти опрос</a>#}
                     </div>
                 </div>
             </div>
