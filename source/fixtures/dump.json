@@ -1,0 +1,340 @@
+[
+{
+    "model": "webapp.poll",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-12-10T08:12:09.089Z",
+        "question": "Какой язык программирования вы изучаете на данный момент?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-12-10T08:14:40.147Z",
+        "question": "В какой местной компании вам хотелось бы поработать?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-12-10T08:16:31.100Z",
+        "question": "На что вы обращаете внимание при выборе работы?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-12-10T08:19:49.826Z",
+        "question": "С какой из БД вам приходилось работать?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-12-10T08:21:25.850Z",
+        "question": "В какой их компаний FAANG вам хотелось бы поработать?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-12-10T08:24:11.507Z",
+        "question": "В какой школе программирования вы учитесь?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-12-10T08:27:25.032Z",
+        "question": "Что больше всего повлияло на вас при выборе школы программирования?"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 8,
+    "fields": {
+        "created_at": "2022-12-10T08:29:08.841Z",
+        "question": "Где вы нашли информацию о школе программирования?"
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 1,
+    "fields": {
+        "option": "Python",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 2,
+    "fields": {
+        "option": "Java",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 3,
+    "fields": {
+        "option": "JavaScript",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 4,
+    "fields": {
+        "option": "PHP",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 5,
+    "fields": {
+        "option": "НурТелеком",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 6,
+    "fields": {
+        "option": "Mega",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 7,
+    "fields": {
+        "option": "Beeline",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 8,
+    "fields": {
+        "option": "MadDevs",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 9,
+    "fields": {
+        "option": "Зарплата",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 10,
+    "fields": {
+        "option": "Новые технологии",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 11,
+    "fields": {
+        "option": "Репутация компания",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 12,
+    "fields": {
+        "option": "Коллектив, Руководство",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 13,
+    "fields": {
+        "option": "Oracle",
+        "poll": 4
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 14,
+    "fields": {
+        "option": "MySql",
+        "poll": 4
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 15,
+    "fields": {
+        "option": "PostgreSql",
+        "poll": 4
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 16,
+    "fields": {
+        "option": "ClickHouse",
+        "poll": 4
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 17,
+    "fields": {
+        "option": "Google",
+        "poll": 5
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 18,
+    "fields": {
+        "option": "Facebook",
+        "poll": 5
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 19,
+    "fields": {
+        "option": "Amazon",
+        "poll": 5
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 20,
+    "fields": {
+        "option": "Netflix",
+        "poll": 5
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 21,
+    "fields": {
+        "option": "Attractor",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 22,
+    "fields": {
+        "option": "IT-Academy",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 23,
+    "fields": {
+        "option": "Megacom- IT school",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 24,
+    "fields": {
+        "option": "Makers Bootcamp",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 25,
+    "fields": {
+        "option": "Цена обучения",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 26,
+    "fields": {
+        "option": "Советы знакомых",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 27,
+    "fields": {
+        "option": "Репутация школы",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 28,
+    "fields": {
+        "option": "Учителя школы программирования",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 29,
+    "fields": {
+        "option": "Онлайн",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 30,
+    "fields": {
+        "option": "Посоветовали знакомые",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 31,
+    "fields": {
+        "option": "Реклама на почту",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 32,
+    "fields": {
+        "option": "Посоветовали бывшие ученики школы",
+        "poll": 8
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$0HlhV8comqRwOokElePdtk$VAalZq/O4vBGr357w1r3rPO2cxEOZ29WbtSE6B5Mfqg=",
+        "last_login": "2022-12-10T06:50:51.509Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-12-10T06:50:37.256Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
