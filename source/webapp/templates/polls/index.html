@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "create_poll" %}">Создать опрос</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h1>Список Опросников</h1>
+    <div class="row">
+        {% for poll in polls %}
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h7 class="card-title">{{ poll.question }}</h7>
+                        <a href="{{ poll.get_absolute_url }}" class="card-link">Подробнее</a>&nbsp;&nbsp;&nbsp;&nbsp;
+{#                        <a href="{% url 'answer_view' %}" class="card-link">Пройти опрос</a>#}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+    </div>
+{% endblock %}

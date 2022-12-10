@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "update_poll" poll.pk %}">Редактировать опрос</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "poll_choice_create" poll.pk %}">Добавить вариант ответа</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url "delete_poll" poll.pk %}">Удалить опрос</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h3>{{ poll.question }}</h3>
+    <br>
+        <hr style="width:20%">
+        {% for choice in choices %}
+            <p>{{ choice.option }}</p>
+            <a href="{% url 'update_choice' choice.pk %}">Изменить</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="{% url 'delete_choice' choice.pk %}">Удалить</a>
+            <hr style="width:20%">
+        {% endfor %}
+{% endblock %}
