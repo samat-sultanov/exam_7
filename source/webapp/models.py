@@ -35,3 +35,14 @@ class Choice(models.Model):
         db_table = "Choices"
         verbose_name = "Вариант ответа"
         verbose_name_plural = "Варианты ответа"
+
+
+class Answer(BaseModel):
+    poll = models.ForeignKey('webapp.Poll', on_delete=models.CASCADE, verbose_name="Опрос", related_name="answers")
+    option = models.ForeignKey('webapp.Choice', on_delete=models.CASCADE, verbose_name="Вариант ответа",
+                               related_name="answers")
+
+    class Meta:
+        db_table = "Answers"
+        verbose_name = "Ответ"
+        verbose_name_plural = "Ответы"
