@@ -18,7 +18,8 @@
                         <a class="card-link text-right position-absolute top-0 end-0" href="{{ poll.get_absolute_url }}"
                            style="padding: 10px;"><i
                                 class="bi bi-ticket-detailed link-success"></i></a>
-                        {#                        <a href="{% url 'answer_view' %}" class="card-link">Пройти опрос</a>#}
+                        <a class="btn btn-success btn-sm"
+                           href="{% url 'answer_add' poll.pk %}">Ответить</a>
                     </div>
                 </div>
             </div>

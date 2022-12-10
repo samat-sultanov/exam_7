@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from webapp.models import Poll, Choice
+from webapp.models import Poll, Choice, Answer
 
 
 class PollAdmin(admin.ModelAdmin):
@@ -18,5 +18,12 @@ class ChoiceAdmin(admin.ModelAdmin):
     exclude = []
 
 
+class AnswerAdmin(admin.ModelAdmin):
+    list_display = ['id', 'poll', 'option']
+    list_display_links = ['id', 'poll', 'option']
+    exclude = []
+
+
 admin.site.register(Poll, PollAdmin)
 admin.site.register(Choice, ChoiceAdmin)
+admin.site.register(Answer, AnswerAdmin)

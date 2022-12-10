@@ -2,7 +2,7 @@ from django.urls import path
 from django.views.generic import RedirectView
 
 from webapp.views import IndexView, CreatePoll, PollView, UpdatePoll, DeletePoll, \
-    CreateChoiceView, UpdateChoice, DeleteChoice
+    CreateChoiceView, UpdateChoice, DeleteChoice, AnswerCreateView
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('poll/<int:pk>/choice/add/', CreateChoiceView.as_view(), name='poll_choice_create'),
     path('choices/<int:pk>/update/', UpdateChoice.as_view(), name='update_choice'),
     path('choices/<int:pk>/delete/', DeleteChoice.as_view(), name='delete_choice'),
+    path('answer/<int:pk>/create', AnswerCreateView.as_view(), name="answer_add")
 ]
